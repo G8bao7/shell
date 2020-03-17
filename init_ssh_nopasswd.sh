@@ -12,7 +12,6 @@ do
     tip=${arr[0]}
     tpwd=${arr[1]}
     echo "$tip "
-    #continue
     expect -c "
         spawn scp -r .ssh root@$tip:/root/
         expect {
